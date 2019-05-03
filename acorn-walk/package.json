@@ -5,7 +5,9 @@
   "main": "dist/walk.js",
   "module": "dist/walk.mjs",
   "version": "6.1.1",
-  "engines": {"node": ">=0.4.0"},
+  "engines": {
+    "node": ">=0.4.0"
+  },
   "maintainers": [
     {
       "name": "Marijn Haverbeke",
@@ -27,7 +29,7 @@
     "url": "https://github.com/acornjs/acorn.git"
   },
   "scripts": {
-    "prepare": "cd ..; npm run build:walk"
+    "prepare": "cd .. && npm run build:walk"
   },
   "license": "MIT"
 }

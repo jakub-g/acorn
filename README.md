@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/acornjs/acorn.svg?branch=master)](https://travis-ci.org/acornjs/acorn)
 [![NPM version](https://img.shields.io/npm/v/acorn.svg)](https://www.npmjs.com/package/acorn)
-[![CDNJS](https://img.shields.io/cdnjs/v/acorn.svg)](https://cdnjs.com/libraries/acorn)  
+[![CDNJS](https://img.shields.io/cdnjs/v/acorn.svg)](https://cdnjs.com/libraries/acorn)
 
 A tiny, fast JavaScript parser, written completely in JavaScript.
 
@@ -35,6 +35,10 @@ git clone https://github.com/acornjs/acorn.git
 cd acorn
 npm install
 ```
+
+Note that `npm install` might take many minutes to finish.
+In particular, `test262` git dependency is huge and can take
+a long time to fetch.
 
 ## Plugin developments
 
