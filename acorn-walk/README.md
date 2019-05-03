@@ -124,3 +124,20 @@ the given position.
 **findNodeAfter**`(node, pos, test, base, state)` is similar to
 `findNodeAround`, but will match all nodes *after* the given position
 (testing outer nodes before inner nodes).
+
+
+## Walking with a plugin
+
+When you use a parser plugin, e.g. `acorn-jsx`, you might see an error
+message like `Base visitor for type JSXElement not found`.
+In such case, you need to pass an additional `base` parameter,
+in which you define the base visitors for all the types defined
+by the plugin. For example, you can extend the default base in the
+following way:
+
+```js
+walk.simple(parsedJsx, {}, {
+  ...walk.base,
+  JSXElement: () => {}
+})
+````
